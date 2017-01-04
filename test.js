@@ -73,7 +73,7 @@ if(typeof G_vmlCanvasManager != 'undefined') {
 context = canvas.getContext("2d");
 
 
-$('#canvas').mousedown(function(e){
+document.querySelector('#canvas').addEventListener('mousedown', function(e){
   var mouseX = e.pageX - this.offsetLeft;
   var mouseY = e.pageY - this.offsetTop;
 		
@@ -82,18 +82,18 @@ $('#canvas').mousedown(function(e){
   redraw();
 });
 
-$('#canvas').mousemove(function(e){
+document.querySelector('#canvas').addEventListener('mousemove', function(e){
   if(paint){
     addClick(e.pageX - this.offsetLeft, e.pageY - this.offsetTop, true);
     redraw();
   }
 });
 
-$('#canvas').mouseup(function(e){
+document.querySelector('#canvas').addEventListener('mouseup', function(e){
   paint = false;
 });
 
-$('#canvas').mouseleave(function(e){
+document.querySelector('#canvas').addEventListener('mouseleave', function(e){
   paint = false;
 });
 }
