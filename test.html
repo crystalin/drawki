@@ -3,9 +3,31 @@
   <head>
     <title>HTML5 Create HTML5 Canvas JavaScript Drawing App Example</title>
     <!--[if IE]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
-    <script type="text/javascript" src="test.js"></script>
+    <script type="text/javascript" src="testremi.js"></script>
+	<link rel="stylesheet" type="text/css" href="test.css">
   </head>
   <body onload="prepareCanvas()">
-    <div id="canvasDiv"></div>
+	<nav>
+		<ul>
+			<li><a href ="index.html">Accueil</a></li>
+			<li><a href ="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	<aside class="bestResults">
+		<table>
+			<thead>
+				<tr><th>Nom</th><th>Score</th></tr>
+			<thead>
+			<tbody>
+				<tr><td>Toto : </td><td> 100 pts </td></tr>
+				<tr><td>Marcel : </td><td> 90 pts </td></tr>
+				<tr><td>Kaki : </td><td> 80 pts </td></tr>
+			<tbody>
+		</table>
+	</aside>
+	<section class="entete">
+		Le mot à faire deviner est chaussette.
+		<div id="canvasDiv"></div>
+	</section>
   </body>
 </html>

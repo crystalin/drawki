@@ -2,8 +2,8 @@ var canvas;
 var context;
  
 // Taille du cadre
-var canvasWidth = 1600;
-var canvasHeight = 800;
+var canvasWidth = 500;
+var canvasHeight = 500;
  
 /*
 var padding = 25;
